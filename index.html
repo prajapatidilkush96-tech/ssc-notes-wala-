@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SSC Notes Wala | CGL CHSL GD MTS</title>
+
+<meta name="description"
+content="SSC CGL, CHSL, GD और MTS की तैयारी के लिए Hindi Notes, MCQ और Daily Quiz।">
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:system-ui,Arial,sans-serif;
+    background:#f5f7fb;
+    color:#111827;
+    transition:.3s;
+}
+
+/* HEADER */
+
+header{
+    background:#1e40af;
+    color:white;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+}
+
+.header-box{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:800;
+}
+
+nav{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:7px 10px;
+    border-radius:7px;
+    font-weight:600;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,.15);
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:55px 20px;
+    background:white;
+}
+
+.hero h1{
+    margin:0;
+    color:#1e40af;
+    font-size:34px;
+}
+
+.hero p{
+    font-size:17px;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    border:0;
+    padding:11px 18px;
+    border-radius:9px;
+    background:#1e40af;
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.btn.green{
+    background:#16a34a;
+}
+
+/* MAIN */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:15px;
+}
+
+.card{
+    background:white;
+    padding:22px;
+    margin:18px 0;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+}
+
+.card h2{
+    margin-top:0;
+}
+
+/* SEARCH */
+
+.search{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:9px;
+    font-size:16px;
+    margin:10px 0 20px;
+}
+
+/* SUBJECTS */
+
+.subject{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.subject span{
+    background:#e0e7ff;
+    color:#1e3a8a;
+    padding:9px 14px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.subject span:hover{
+    background:#c7d2fe;
+}
+
+/* QUESTIONS */
+
+.q{
+    padding:15px;
+    margin:12px 0;
+    background:#f8fafc;
+    border-radius:12px;
+    border-left:4px solid #1e40af;
+}
+
+.answer{
+    display:none;
+    margin-top:10px;
+    color:#15803d;
+    font-weight:600;
+}
+
+/* QUIZ */
+
+.quiz-opt{
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ddd;
+    border-radius:9px;
+    cursor:pointer;
+}
+
+.quiz-opt:hover{
+    background:#eef2ff;
+}
+
+.correct{
+    background:#dcfce7;
+    border-color:#22c55e;
+}
+
+.wrong{
+    background:#fee2e2;
+    border-color:#ef4444;
+}
+
+#result{
+    font-size:20px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+/* DARK MODE */
+
+body.dark{
+    background:#111827;
+    color:#f9fafb;
+}
+
+body.dark .hero,
+body.dark .card{
+    background:#1f2937;
+}
+
+body.dark .hero h1{
+    color:#60a5fa;
+}
+
+body.dark .hero p{
+    color:#d1d5db;
+}
+
+body.dark .q{
+    background:#111827;
+}
+
+body.dark .quiz-opt{
+    border-color:#4b5563;
+}
+
+body.dark .search{
+    background:#111827;
+    color:white;
+    border-color:#4b5563;
+}
+
+body.dark .subject span{
+    background:#1e3a8a;
+    color:white;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px 15px;
+    background:#111827;
+    color:#ccc;
+    margin-top:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .header-box{
+        flex-direction:column;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:27px;
+    }
+
+    .card{
+        padding:17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="header-box">
+
+<div class="logo">
+📚 SSC NOTES WALA
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#notes">Notes</a>
+<a href="#questions">MCQ</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<h1>SSC CGL / CHSL / GD / MTS</h1>
+
+<p>
+Complete SSC Preparation – Notes + MCQ + Daily Quiz
+</p>
+
+<a href="#notes" class="btn">
+📚 Notes पढ़ें
+</a>
+
+<button class="btn" onclick="darkMode()">
+🌙 Dark Mode
+</button>
+
+</section>
+
+
+<div class="container">
+
+
+<!-- SEARCH -->
+
+<div class="card">
+
+<h2>🔍 Notes Search करें</h2>
+
+<input
+class="search"
+id="search"
+placeholder="जैसे Maths, Maurya, Tenses..."
+onkeyup="searchNotes()"
+>
+
+</div>
+
+
+<!-- NOTES -->
+
+<div class="card" id="notes">
+
+<h2>📚 Latest Notes</h2>
+
+<div class="subject">
+
+<span onclick="showNote('math')">
+➗ Maths
+</span>
+
+<span onclick="showNote('reasoning')">
+🧠 Reasoning
+</span>
+
+<span onclick="showNote('gk')">
+🌏 GK
+</span>
+
+<span onclick="showNote('english')">
+📖 English
+</span>
+
+</div>
+
+<hr>
+
+
+<div id="noteContent">
+
+<h3>➗ Maths – Simple Interest</h3>
+
+<p>
+<b>SI = (P × R × T) / 100</b>
+</p>
+
+<p>
+Example: ₹5000 पर 2 साल के लिए 10% ब्याज
+</p>
+
+<p>
+SI = 5000 × 10 × 2 / 100 = <b>₹1000</b>
+</p>
+
+<hr>
+
+<h3>🌏 GK – Mauryan Empire</h3>
+
+<p>
+चन्द्रगुप्त मौर्य ने मौर्य साम्राज्य की स्थापना की।
+चाणक्य उनके प्रमुख सलाहकार थे।
+</p>
+
+<p>
+अशोक ने कलिंग युद्ध के बाद बौद्ध धर्म और धम्म की नीति को अपनाया।
+</p>
+
+</div>
+
+</div>
+
+
+<!-- QUESTIONS -->
+
+<div class="card" id="questions">
+
+<h2>📝 Topic-wise MCQ</h2>
+
+
+<div class="q">
+
+<b>Q1. 15% of 400 = ?</b>
+
+<br><br>
+
+A) 40  
+B) 60  
+C) 80  
+D) 50
+
+<br>
+
+<button
+class="btn"
+onclick="showAnswer(this)">
+Answer देखें
+</button>
+
+<div class="answer">
+✅ Correct Answer: B) 60
+</div>
+
+</div>
+
+
+<div class="q">
+
+<b>
+Q2. पानीपत की दूसरी लड़ाई कब हुई?
+</b>
+
+<br><br>
+
+A) 1526  
+B) 1556  
+C) 1761  
+D) 1576
+
+<br>
+
+<button
+class="btn"
+onclick="showAnswer(this)">
+Answer देखें
+</button>
+
+<div class="answer">
+✅ Correct Answer: B) 1556
+</div>
+
+</div>
+
+
+<div class="q">
+
+<b>
+Q3. A, B का भाई है। C, A की माँ है।
+C का B से क्या रिश्ता है?
+</b>
+
+<br><br>
+
+A) बहन  
+B) माँ  
+C) बेटी  
+D) दादी
+
+<br>
+
+<button
+class="btn"
+onclick="showAnswer(this)">
+Answer देखें
+</button>
+
+<div class="answer">
+✅ Correct Answer: B) माँ
+</div>
+
+</div>
+
+</div>
+
+
+<!-- QUIZ -->
+
+<div class="card" id="quiz">
+
+<h2>⚡ Daily Mini Quiz</h2>
+
+<p>
+3 Questions • अपना Score देखें
+</p>
+
+<div id="quizBox"></div>
+
+<div id="result"></div>
+
+<button
+class="btn green"
+onclick="startQuiz()">
+
+🚀 Quiz Start करें
+
+</button>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<div class="card">
+
+<h2>ℹ️ About SSC Notes Wala</h2>
+
+<p>
+SSC Notes Wala पर SSC CGL, CHSL, GD और MTS
+की तैयारी के लिए आसान Hindi Notes,
+Topic-wise MCQ और Daily Quiz उपलब्ध हैं।
+</p>
+
+</div>
+
+
+<!-- SOCIAL -->
+
+<div class="card" style="text-align:center">
+
+<h2>📲 हमारे साथ जुड़ें</h2>
+
+<a
+class="btn"
+href="#"
+onclick="alert('यहाँ अपना Telegram link डालें')">
+
+Telegram
+
+</a>
+
+<a
+class="btn"
+href="#"
+onclick="alert('यहाँ अपना WhatsApp link डालें')">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<b>SSC NOTES WALA</b>
+
+<br><br>
+
+Free SSC Preparation Website
+
+<br>
+
+© 2026 SSC Notes Wala
+
+</footer>
+
+
+<script>
+
+/* ANSWER */
+
+function showAnswer(button){
+
+let answer=button.nextElementSibling;
+
+if(answer.style.display==="block"){
+
+answer.style.display="none";
+button.innerText="Answer देखें";
+
+}else{
+
+answer.style.display="block";
+button.innerText="Answer छुपाएँ";
+
+}
+
+}
+
+
+/* NOTES */
+
+function showNote(type){
+
+let box=document.getElementById("noteContent");
+
+if(type==="math"){
+
+box.innerHTML=`
+<h3>➗ Maths – Percentage</h3>
+
+<p>
+Percentage = (Part / Total) × 100
+</p>
+
+<p>
+Example: 20 is what percentage of 100?
+</p>
+
+<p>
+20/100 × 100 = <b>20%</b>
+</p>
+`;
+
+}
+
+if(type==="reasoning"){
+
+box.innerHTML=`
+<h3>🧠 Reasoning – Blood Relation</h3>
+
+<p>
+Family relation questions में पहले
+relationship को step-by-step समझें।
+</p>
+
+<p>
+Example: A, B का भाई है और C, A की माँ है।
+तो C, B की भी माँ होगी।
+</p>
+`;
+
+}
+
+if(type==="gk"){
+
+box.innerHTML=`
+<h3>🌏 GK – Mauryan Empire</h3>
+
+<p>
+चन्द्रगुप्त मौर्य ने मौर्य साम्राज्य की स्थापना की।
+</p>
+
+<p>
+अशोक के शासनकाल में मौर्य साम्राज्य का विस्तार हुआ।
+कलिंग युद्ध के बाद अशोक ने धम्म की नीति अपनाई।
+</p>
+`;
+
+}
+
+if(type==="english"){
+
+box.innerHTML=`
+<h3>📖 English – Tenses</h3>
+
+<p>
+Present, Past और Future मुख्य तीन Tenses हैं।
+</p>
+
+<p>
+Example:
+I go to school.
+<br>
+I went to school.
+<br>
+I will go to school.
+</p>
+`;
+
+}
+
+}
+
+
+/* SEARCH */
+
+function searchNotes(){
+
+let value=document
+.getElementById("search")
+.value
+.toLowerCase();
+
+let questions=document
+.querySelectorAll(".q");
+
+questions.forEach(function(q){
+
+if(q.innerText.toLowerCase().includes(value)){
+
+q.style.display="block";
+
+}else{
+
+q.style.display="none";
+
+}
+
+});
+
+}
+
+
+/* DARK MODE */
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+
+/* QUIZ */
+
+const quizData=[
+
+{
+q:"Article 370 कब हटाया गया?",
+o:[
+"5 August 2019",
+"15 August 2019",
+"26 January 2020",
+"5 August 2020"
+],
+a:0
+},
+
+{
+q:"LCM of 12 और 18 कितना है?",
+o:[
+"24",
+"36",
+"48",
+"60"
+],
+a:1
+},
+
+{
+q:"Synonym of 'Honest'?",
+o:[
+"Liar",
+"Truthful",
+"Lazy",
+"Rude"
+],
+a:1
+}
+
+];
+
+
+let score=0;
+let idx=0;
+
+
+function startQuiz(){
+
+score=0;
+idx=0;
+
+showQuestion();
+
+}
+
+
+function showQuestion(){
+
+if(idx>=quizData.length){
+
+document
+.getElementById("quizBox")
+.innerHTML="";
+
+document
+.getElementById("result")
+.innerHTML=
+"🎉 Quiz Complete! आपका Score: "
++score+
+"/"+
+quizData.length;
+
+return;
+
+}
+
+
+let d=quizData[idx];
+
+let html=
+"<b>Q"+
+(idx+1)+
+". "+
+d.q+
+"</b>";
+
+
+d.o.forEach(function(option,i){
+
+html+=
+`
+<div
+class="quiz-opt"
+onclick="checkAnswer(${i})">
+
+${option}
+
+</div>
+`;
+
+});
+
+
+document
+.getElementById("quizBox")
+.innerHTML=html;
+
+}
+
+
+function checkAnswer(i){
+
+if(i===quizData[idx].a){
+
+score++;
+
+}
+
+idx++;
+
+showQuestion();
+
+}
+
+</script>
+
+</body>
+</html>
